@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Tilt+Warp&display=swap');
+body {
+	background: black;
+	font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+	text-align: center;
+    font-size: larger;
+    font-weight: 600;
+	color: white;
+}
+
+h2 {
+	color: white;
+}
+
+.container {
+	width: 600px;
+	margin: 100px auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+li {
+	height: 40px;
+	margin-top: 10px;
+	line-height: 40px;
+	color: rgb(230,230,12);
+}
+
+li:nth-child(2n) {
+	background: rgba(123,123,123,0.5);
+}
+
+.left {
+	background: #e74c3c;
+	height: 40px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	padding:0 5px;
+	width: 0; 
+	opacity: 0;
+	border-radius: 5px;
+	transition: 0.2s linear;
+}
+
+.right {
+	background: green;
+	height: 40px;
+	padding:0 5px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	display: inline-block;
+	width: 0; 
+	opacity: 0;
+	transition: 0.2s linear;
+	position: absolute;
+	right: 0px;
+}
+
+li:hover span{
+	width: 35px;
+	opacity: 1;
+}
+
+.todoinput {
+	width: 100%;
+	font-size: 18px;
+	padding: 10px 10px 10px 15px;
+	outline: none;
+	border-radius: 20px;
+}
+
+.editinput {
+	height: 100%;
+	width: 100%;
+	outline: none;
+}
+
+
+
+.completed {
+	text-decoration: line-through;
+	color: gray;
+}
